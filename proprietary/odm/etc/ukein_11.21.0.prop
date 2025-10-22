@@ -1,0 +1,7 @@
+# only customized property
+ro.product.odm.name=uke_in
+ro.product.odm.cert=2410CRP4CI
+ro.product.odm.model=2410CRP4CI
+ro.product.model_for_attestation = 2410CRP4CI
+ro.product.name_for_attestation = uke_in
+ro.product.odm.marketname=Xiaomi Pad 7
