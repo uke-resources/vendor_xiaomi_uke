@@ -933,6 +933,7 @@
             <max_channels>2</max_channels>
             <channels>2</channels>
             <bit_width>24</bit_width>
+            <samplerate>48000</samplerate>
             <fractional_sr>1</fractional_sr>
             <snd_device_name>headphones</snd_device_name>
         <!--HIFI Filter Headphones-Uncomment this when param key hifi_filter is true
@@ -974,6 +975,7 @@
             <max_channels>2</max_channels>
             <channels>2</channels>
             <bit_width>24</bit_width>
+            <samplerate>48000</samplerate>
             <fractional_sr>1</fractional_sr>
             <snd_device_name>headphones</snd_device_name>
         <!--HIFI Filter Headphones-Uncomment this when param key hifi_filter is true

@@ -312,8 +312,6 @@
     <string name="support_bt_dbam">false</string>
     <!-- whether support modem-->
     <string name="not_support_modem_for_dbam">false</string>
-    <!-- whether enable the btsnoop default-->
-    <string name="enable_Btsnoop">uke</string>
     <!-- whether support adaptive samplerate-->
     <bool name="support_adaptive_sampler">true</bool>
 <!-- Bluethooth END -->
@@ -703,15 +701,6 @@
     <bool name="support_magic_pointer">true</bool>
 <!-- Pad Keyboard BEGIN -->
 
-<!-- Game BEGIN -->
-    <!-- gamebooster mi time -->
-    <bool name="support_game_mi_time">false</bool>
-    <!-- gamebooster game gunsight -->
-    <bool name="support_game_gunsight">true</bool>
-    <!--whether support gamebooster fisr-->
-    <string name="game_enhance_feature_name">game_enhance_fisr</string>
-<!-- Game END -->
-
 <!-- Unkonwn properties BEGIN(not exist in the code) -->
     <!--whether the device support alpha optimized-->
     <bool name="support_alpha_optimized">true</bool>
@@ -769,6 +758,8 @@
     <bool name="support_hide_discoverable">true</bool>
     <!-- Support ARCore, This feature is subjected to change if google defines a standard feature.-->
     <bool name="support_ar_core">true</bool>
+    <!-- gamebooster mi time -->
+    <bool name="support_game_mi_time">false</bool>
     <!-- FOD solution -->
     <integer name="fod_solution">3</integer>
     <!-- whether support sound assist function -->
@@ -787,6 +778,8 @@
     <bool name="support_full_size_panorama">true</bool>
     <!--whether taking lower size panorama in camera-->
     <bool name="is_lower_size_panorama">false</bool>
+    <!-- gamebooster game gunsight -->
+    <bool name="support_game_gunsight">true</bool>
 
     <!-- Do not enable this feature on other devices, except venus,zeus and unicorn -->
     <!-- Whether support autobrightness adjustment by application -->
@@ -797,6 +790,9 @@
     <bool name="support_cloud_dim">false</bool>
     <!-- fw/base support display temperature control -->
     <bool name="support_temperature_control">false</bool>
+
+    <!-- Whether support backlight animation when manually slidle the brightness bar -->
+    <bool name="support_manual_dimming">true</bool>
 
     <!-- Do not enable this feature on other devices, except fuxi, nuwa, socrates, mondrian, liuqin , yudi and pipa-->
     <!-- Whether support Gallery HDR -->

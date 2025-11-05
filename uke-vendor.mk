@@ -110,7 +110,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/beauty_config_cn_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_cn_8g.json \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl.json \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/beauty_config_gl_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl_8g.json \
-    vendor/xiaomi/uke/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
+    vendor/xiaomi/uke/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
+    vendor/xiaomi/uke/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/deblur_txt_dsp.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_dsp.dlc \
     vendor/xiaomi/uke/proprietary/odm/etc/camera/deblur_txt_gpu.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_gpu.dlc \
@@ -546,8 +547,36 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/odm/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_0.txt \
     vendor/xiaomi/uke/proprietary/odm/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_1.txt \
     vendor/xiaomi/uke/proprietary/odm/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_o82_42_02_0b_dualdsi_dsc_vid/mi_gc_3.txt \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/LUT.txt:$(TARGET_COPY_OUT_ODM)/etc/display/LUT.txt \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/LUT0.txt:$(TARGET_COPY_OUT_ODM)/etc/display/LUT0.txt \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/LUT1.txt:$(TARGET_COPY_OUT_ODM)/etc/display/LUT1.txt \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/LUT2.txt:$(TARGET_COPY_OUT_ODM)/etc/display/LUT2.txt \
     vendor/xiaomi/uke/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o82_36_02_0a_vid_mode_dualdsi_dsc_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o82_36_02_0a_vid_mode_dualdsi_dsc_panel.json \
     vendor/xiaomi/uke/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o82_42_02_0b_vid_mode_dualdsi_dsc_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o82_42_02_0b_vid_mode_dualdsi_dsc_panel.json \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_2x_y1280x720.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_2x_y1280x720.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_2x_y540x960.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_2x_y540x960.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_2x_y720x1280.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_2x_y720x1280.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_2x_y960x540.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_2x_y960x540.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_3x_y368x640.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_3x_y368x640.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_3x_y544x960.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_3x_y544x960.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_3x_y640x368.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_3x_y640x368.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_3x_y960x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_3x_y960x544.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_4x_y544x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_4x_y544x544.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_5x_y384x640.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_5x_y384x640.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8635_sr_5x_y640x384.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8635_sr_5x_y640x384.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_carsr_2x_y544x960.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_carsr_2x_y544x960.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_carsr_2x_y960x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_carsr_2x_y960x544.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_1x_y1280x720.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_1x_y1280x720.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_1x_y544x960.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_1x_y544x960.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_1x_y720x1280.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_1x_y720x1280.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_1x_y960x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_1x_y960x544.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_2x_y1280x720.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_2x_y1280x720.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_2x_y544x960.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_2x_y544x960.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_2x_y720x1280.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_2x_y720x1280.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_2x_y960x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_2x_y960x544.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_3x_y368x640.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_3x_y368x640.dlc \
+    vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_3x_y640x368.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_3x_y640x368.dlc \
     vendor/xiaomi/uke/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/uke/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
     vendor/xiaomi/uke/proprietary/odm/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/chre_dynamic_sensors.json \
@@ -764,32 +793,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/165_OldAlley.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/165_OldAlley.png \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/166_Reversal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/166_Reversal.png \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokehParams.json \
+    vendor/xiaomi/uke/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
     vendor/xiaomi/uke/proprietary/vendor/etc/camera/model_front_mibokeh_video.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_front_mibokeh_video.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/LUT.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT.txt \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/LUT0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT0.txt \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/LUT1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT1.txt \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/LUT2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT2.txt \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_2x_y1280x720.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_2x_y1280x720.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_2x_y540x960.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_2x_y540x960.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_2x_y720x1280.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_2x_y720x1280.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_2x_y960x540.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_2x_y960x540.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_3x_y368x640.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_3x_y368x640.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_3x_y544x960.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_3x_y544x960.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_3x_y640x368.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_3x_y640x368.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_3x_y960x544.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_3x_y960x544.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_4x_y544x544.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_4x_y544x544.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_5x_y384x640.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_5x_y384x640.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8635_sr_5x_y640x384.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8635_sr_5x_y640x384.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_1x_y1280x720.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_1x_y1280x720.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_1x_y720x1280.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_1x_y720x1280.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_2x_y1280x720.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_2x_y1280x720.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_2x_y544x960.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_2x_y544x960.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_2x_y720x1280.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_2x_y720x1280.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_2x_y960x544.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_2x_y960x544.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_3x_y368x640.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_3x_y368x640.dlc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/display/sm8650_sr_3x_y640x368.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/sm8650_sr_3x_y640x368.dlc \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/common_multi_factor_thermal_brightness_control.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/common_multi_factor_thermal_brightness_control.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/display_id_4630946416293825923.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946416293825923.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/display_id_4630946545580055171.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946545580055171.xml \
@@ -801,7 +807,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/display_id_4630947256895775107.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947256895775107.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/multi_factor_thermal_brightness_control.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/multi_factor_thermal_brightness_control.xml \
-    vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/resolution_switch_process_list_backup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/resolution_switch_process_list_backup.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/rhythmic_app_category_list_backup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/rhythmic_app_category_list_backup.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/chre_dynamic_sensors.json \
     vendor/xiaomi/uke/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_4.json \

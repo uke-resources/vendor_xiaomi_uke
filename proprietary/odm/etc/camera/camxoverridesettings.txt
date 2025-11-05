@@ -15,30 +15,12 @@ SupernightSEManualEVMaskForUW=0x010122F1
 SupernightManualEVMaskForUW=0x010122F1
 UIRelatedMetas=xiaomi.supernight.checker|xiaomi.ai.misd.NonSemanticScene|xiaomi.ai.asd.asdExifInfo
 
-# Camera Log
-logInfoMask=0
-logWarningMask=0
-logConfigMask=0
-logVerboseMask=0
-logCoreCfgMask=0
-logRequestMapping=FALSE
-systemLogEnable=TRUE
-enableAsciiLogging=0
-enableTxtLogging=0
-raiserecoverysigabrt=FALSE
-enableBinaryLogging=0
-enableXiaomiBinLogging=0
-xiaomiBinLogNumber=10
-offlineLogNumber=10
+#Camera log
+enableTxtLogging=1
+offlineLogNumber=15
 offlineLoggerEnableBackupLog=FALSE
-enableCameraCoreDumpBinary=FALSE
-overrideCameraCoreDumpLogging=FALSE
-enableCameraCoreDumpText=FALSE
-numConsecutiveRecovery=10
-chiLogInfoMask=0
-chiLogWarningMask=0
-chiLogCoreCfgMask=0
-# overrideLogLevels=0x1F
+logInfoMask=0x10098
+overrideLogLevels=0x1F
 
 # For CTS Reprocess Size
 minReprocessInputWidth=0x1FFF
