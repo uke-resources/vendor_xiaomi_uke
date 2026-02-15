@@ -87,6 +87,8 @@
     <string-array name="knock_support_display_version">
         <item>18</item>
     </string-array>
+    <!--whether support gamebooster fisr-->
+    <string name="game_enhance_feature_name">game_enhance_fisr</string>
 <!-- BSP END -->
 
 <!-- MIUI BEGIN -->
@@ -180,6 +182,47 @@
     <bool name="support_stylus_gesture">true</bool>
     <!-- whether support stylus quick note-->
     <bool name="stylus_quick_note">true</bool>
+    <!-- stylus pinch trigger/release pressure config -->
+    <integer-array name="pinch_trigger_pressure_extreme_weak">
+        <!-- stylus pinch trigger pressure threshold, with an adjustable range of 1~900g. -->
+        <item>90</item>
+        <!-- stylus pinch release pressure threshold, with an adjustable range of 1~900g. -->
+        <item>45</item>
+        <!-- stylus pinch press haptic feedback strength, with an adjustable range of 0~255. -->
+        <item>128</item>
+        <!-- stylus pinch lift haptic feedback strength, with an adjustable range of 0~255. -->
+        <item>128</item>
+    </integer-array>
+    <integer-array name="pinch_trigger_pressure_weak">
+        <item>180</item>
+        <item>90</item>
+        <item>128</item>
+        <item>128</item>
+    </integer-array>
+    <integer-array name="pinch_trigger_pressure_medium">
+        <item>270</item>
+        <item>135</item>
+        <item>128</item>
+        <item>128</item>
+    </integer-array>
+    <integer-array name="pinch_trigger_pressure_strong">
+        <item>360</item>
+        <item>180</item>
+        <item>128</item>
+        <item>128</item>
+    </integer-array>
+    <integer-array name="pinch_trigger_pressure_extreme_strong">
+        <item>450</item>
+        <item>225</item>
+        <item>128</item>
+        <item>128</item>
+    </integer-array>
+    <!-- stylus double tap haptic feedback config, with an adjustable range of 0~255. -->
+    <integer name="double_tap_haptic_feedback">128</integer>
+    <!-- stylus sliding up haptic feedback config, with an adjustable range of 0~255. -->
+    <integer name="sliding_up_haptic_feedback">128</integer>
+    <!-- stylus sliding down haptic feedback config, with an adjustable range of 0~255. -->
+    <integer name="sliding_down_haptic_feedback">128</integer>
 <!-- Framework END -->
 
 <!-- Performance BEGIN -->
