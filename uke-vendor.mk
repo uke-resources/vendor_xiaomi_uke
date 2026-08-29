@@ -1497,7 +1497,10 @@ PRODUCT_PACKAGES += \
     audio.bluetooth_qti.default \
     audio.primary.pineapple \
     camera.qcom.sm8650 \
+    camera.qcom \
     com.dsi.ant@1.0-impl \
+    com.qti.chi.offline \
+    com.qti.chi.override \
     gyro_fusion_interface \
     libqtigatekeeper \
     sound_trigger.primary.pineapple \
