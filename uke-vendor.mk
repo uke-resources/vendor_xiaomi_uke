@@ -2460,6 +2460,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_turbo_hdr_detection \
     libarcsoft_turbo_sr_detection \
     libaudioroute_ext \
+    libawcal \
     libcamera_scene \
     libclient2slpi.notifier \
     libcolortempmode \
