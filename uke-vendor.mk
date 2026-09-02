@@ -19,9 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/br-spk_hp.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/br-spk_hp.wav \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/hrtf5c.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/hrtf5c.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/mis_head.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_head.bin \
-    vendor/xiaomi/uke/proprietary/odm/etc/audio/mis_head_spatial.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_head_spatial.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/mis_spk.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_spk.bin \
-    vendor/xiaomi/uke/proprietary/odm/etc/audio/mis_spk_spatial.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_spk_spatial.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/misound_karaoke_res.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_karaoke_res.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_karaokemix_res.bin \
     vendor/xiaomi/uke/proprietary/odm/etc/audio/misound_res_spk_power_game.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_spk_power_game.bin \
@@ -588,9 +586,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_2x_y960x544.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_2x_y960x544.dlc \
     vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_3x_y368x640.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_3x_y368x640.dlc \
     vendor/xiaomi/uke/proprietary/odm/etc/display/sm8650_sr_3x_y640x368.dlc:$(TARGET_COPY_OUT_ODM)/etc/display/sm8650_sr_3x_y640x368.dlc \
-    vendor/xiaomi/uke/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/uke/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
-    vendor/xiaomi/uke/proprietary/odm/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby_vision.cfg \
     vendor/xiaomi/uke/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/uke/proprietary/odm/etc/init/init.awinic.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.awinic.rc \
     vendor/xiaomi/uke/proprietary/odm/etc/init/init.cirrus.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.cirrus.rc \
@@ -988,8 +983,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/multi_factor_thermal_brightness_control.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/multi_factor_thermal_brightness_control.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/displayconfig/rhythmic_app_category_list_backup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/rhythmic_app_category_list_backup.xml \
-    vendor/xiaomi/uke/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/uke/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/uke/proprietary/vendor/etc/eva/facedetection/bias.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/bias.dat \
     vendor/xiaomi/uke/proprietary/vendor/etc/eva/facedetection/weight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/weight.dat \
@@ -1015,7 +1008,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
@@ -1048,8 +1040,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service-vision.rc \
-    vendor/xiaomi/uke/proprietary/vendor/etc/init/vendor.dolby_3_12.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby_3_12.media.c2@1.0-service.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/xiaomi/uke/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
@@ -1109,7 +1099,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_cliffs_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_cliffs_v1/video_system_specs.json \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cliffs_v0.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cliffs_v1.xml \
-    vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_muyu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_muyu.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_performance_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cliffs_v0.xml \
     vendor/xiaomi/uke/proprietary/vendor/etc/media_codecs_performance_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cliffs_v1.xml \
@@ -1339,10 +1328,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
-    c2.dolby.client \
-    c2.dolby.hevc.dec \
-    c2.dolby.hevc.sec.dec \
-    c2.dolby.store \
     com.mi.node.dlengine \
     com.mi.node.mawcommon \
     com.mi.node.mawsaliency \
@@ -1675,9 +1660,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcodec2_soft_ac4dec_3_12 \
-    libcodec2_soft_ddpdec_3_12 \
-    libcodec2_store_dolby_3_12 \
     libcom.qti.chinodeutils \
     libcom.xiaomi.attribute \
     libcom.xiaomi.debug \
@@ -1695,10 +1677,7 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libcv_common \
-    libdapparamstorage \
-    libdapparamstorage_3_12 \
     libdataitems \
-    libdeccfg_3_12 \
     libdeflicker \
     libdfintf \
     libdiag \
@@ -1711,13 +1690,6 @@ PRODUCT_PACKAGES += \
     libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
-    libdlbdsservice_3_12 \
-    libdlbpreg \
-    libdlbpreg_3_12 \
-    libdmshal_3_12 \
-    libdolbydecoderprocessor \
-    libdolbyeglcore \
-    libdolbyottcameracontrol \
     libdpmqmihal \
     libdpp_manager \
     libdpps \
@@ -2046,8 +2018,6 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libsnsutils \
     libsoc_helper \
-    libspatializerparamstorage \
-    libspatializerparamstorage_3_12 \
     libspcom \
     libspl \
     libsplh \
@@ -2058,7 +2028,6 @@ PRODUCT_PACKAGES += \
     libstreamparser \
     libsubsystem_control \
     libswregistrationalgo \
-    libswspatializer_ext \
     libsxrservice \
     libsxrservice_client.qti \
     libsynergy_loc_api \
@@ -2151,15 +2120,8 @@ PRODUCT_PACKAGES += \
     libworker_pool \
     sensors.qsh \
     libasphere \
-    libdlbvol_3_12 \
-    libhwdap_3_12 \
     libmisoundfx_n2 \
     libquasar \
-    libshoebox \
-    libspatializer \
-    libspatializer_fx \
-    libswgamedap_3_12 \
-    libswspatializer_3_12 \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -2167,9 +2129,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.dolby.dms-V1-ndk \
-    vendor.dolby.hardware.dms@2.0 \
-    vendor.dolby_3_12.hardware.dms@2.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -2538,7 +2497,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     datafactoryservice-saidl.xml \
-    dms-service.xml \
     dpm-saidl.xml \
     mwqem-saidl.xml \
     qesdk-manager.xml \
@@ -2594,11 +2552,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.security.keymint-service-qti \
-    dolbycodec2 \
     pasrknob \
     sxrservice \
-    vendor.dolby.dms.service \
-    vendor.dolby_3_12.media.c2@1.0-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
